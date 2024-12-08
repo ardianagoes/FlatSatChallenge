@@ -76,7 +76,7 @@ def take_photo():
             print("threshold met")
             time.sleep(2)
             picam2.start()
-            picam2.capture_file(ArdianA)
+            picam2.capture_file(img_gen(ArdianA))
             picam2.start()
             git_push()
         #CHECKS IF READINGS ARE ABOVE THRESHOLD
