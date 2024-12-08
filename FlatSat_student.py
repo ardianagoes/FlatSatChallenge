@@ -48,8 +48,8 @@ def git_push():
         print('made the commit')
         origin.push()
         print('pushed changes')
-    except:
-        print('Couldn\'t upload to git')
+    except Exception as e:
+        print(f"Couldn't upload to git: {e}")
 
 
 def img_gen(name):
