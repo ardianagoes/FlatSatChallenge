@@ -22,7 +22,7 @@ from git import Repo
 from picamera2 import Picamera2
 
 #VARIABLES
-THRESHOLD = 9.8     #Any desired value from the accelerometer
+THRESHOLD = 15    #Any desired value from the accelerometer
 REPO_PATH = "/home/pi/Documents/FlatSatChallenge" #Your github repo path: ex. /home/pi/FlatSatChallenge
 FOLDER_PATH = "Images"   #Your image folder path in your GitHub repo: ex. /Images
 
