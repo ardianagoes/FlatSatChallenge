@@ -73,18 +73,20 @@ def take_photo():
         accelx, accely, accelz = accel_gyro.acceleration
         acceleration_magnitude = (accelx**2 + accely**2 + accelz**2)**0.5
         if acceleration_magnitude > THRESHOLD:
-            print("threshold met")
-            time.sleep(2)
+            print("Threshold Met")
+            print("Picture in 3")
+            time.sleep(1)
+            print("Picture in 2")
+            time.sleep(1)
+            print("Picture in 1")
+            time.sleep(1)            
             picam2.start()
             picam2.capture_file(img_gen("ArdianA"))
             picam2.start()
+            print("Picture in 1")
             git_push()
-        #CHECKS IF READINGS ARE ABOVE THRESHOLD
-            #PAUSE
-            #name = ""     #First Name, Last Initial  ex. MasonM
-            #TAKE PHOTO
-            #PUSH PHOTO TO GITHUB
         time.sleep(1)
+        print("Camera Ready")
 
         #PAUSE
 
